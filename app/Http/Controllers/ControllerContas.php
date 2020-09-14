@@ -8,7 +8,6 @@ use App\Contas;
 
 use Illuminate\Support\Facades\Auth;
 use Illuminate\Support\Facades\DB;
-use App\Http\Controllers\ControllerExtrato;
 class ControllerContas extends Controller
 {
   
@@ -52,10 +51,7 @@ class ControllerContas extends Controller
         $deposito = Contas::where("con_user_id",$request->con_user_id)->first();
         if ($deposito) {
            Contas::where('con_user_id',$request->con_user_id)->decrement('con_saldo',$request->con_saldo);
-             
-             $extrato = new ControllerContas();
-             $extrato->SetExtrato($request->con_user_id,2,$request->con_saldo);
-           // return  $this->getDadosContaUser($request->con_user_id);
+            return  $this->getDadosContaUser($request->con_user_id);
         } else {
          
         }

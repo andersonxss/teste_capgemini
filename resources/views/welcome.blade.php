@@ -11,7 +11,7 @@
                     <form method="POST" action="{{ route('login') }}">
                         @csrf
                         <p class="text-center">
-                            Login: user1@gmail.com
+                            Login: user1@hotmail.com
                         </p>
                         <p class="text-center">
                             Senha: 12345678
