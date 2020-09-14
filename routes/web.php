@@ -29,6 +29,6 @@ Route::get('/saque', function () {
 
     return view('home');
 });
-//Route::get('/home', 'ControllerContas@getDadosContaUser');
+
 
 Route::get('contas/setExtrato/{id}','ControllerContas@setExtrato');

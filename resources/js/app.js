@@ -15,12 +15,10 @@ Vue.use(VueRouter)
 Vue.use(VueSweetalert2);
 
 import App from './components/app'
-
 import Home from './components/home'
 import Deposito from './components/deposito'
-import Extrato from './components/extrato'
 import Saque from './components/saque'
-import Transferencia from './components/transferencia'
+
 
 const router = new VueRouter({
     mode: 'history',
@@ -35,21 +33,13 @@ const router = new VueRouter({
             name: 'deposito',
             component: Deposito,
         },
-        {
-            path: '/extrato',
-            name: 'extrato',
-            component: Extrato,
-        },
+       
         {
             path: '/saque',
             name: 'saque',
             component: Saque,
         },
-        {
-            path: '/transferencia',
-            name: 'transferencia',
-            component: Transferencia,
-        },
+       
     ],
 });
 
