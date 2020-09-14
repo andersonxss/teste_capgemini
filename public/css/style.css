@@ -1,0 +1,64 @@
+.list-itens{
+
+    width: 100%;
+    height: auto;
+    display: flex;
+    justify-content: center;
+   
+}
+.list-itens li {
+    width: auto;
+    height: auto;
+    display: flex;
+}
+.list-itens li a{
+
+    width: 100px;
+    height: 100px;
+    display: flex;
+    text-decoration: none;
+    margin-left: 5px;
+    color: #0070ad;
+    border: 2px solid #0070ad;
+    justify-content: center;
+    align-items: center;
+    border-radius: 10px;
+}
+
+.list-itens li a:hover{
+    background-color: #0070ad;
+    color: #ffff;
+}
+
+.card-home .card-header{
+    display: flex;
+}
+
+.card-home .card-header .nome{
+    float: left;
+    width: 50%;
+}
+
+.card-home .card-header .saldo{
+    float: right;
+    width: 50%;
+    text-align: right;
+}
+.card-home  .dados_pessoais{
+    text-align: center;
+    background: #0270ad;
+    margin: 10px;
+    color: white;
+    font-size: 18px;
+    padding: 10px;
+}
+
+.card-home  .dados_pessoais .dados-conta{
+    display: flex;
+    justify-content: center;
+    width: 100%;
+}
+
+.card-home  .dados_pessoais .dados-conta span{
+    margin-right: 10px;
+}
